@@ -43,6 +43,10 @@ body {
     box-sizing: border-box;
 }
 
+.header .logoArea{
+    width: 33.3%;
+}
+
 .header .logoBox{
     width: 100%;
     max-width: 145px;
@@ -57,10 +61,18 @@ body {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    width: 33.3%;
 }
 
 .header nav p{
     font-family: 'Pretendard-Bold';
+    cursor: pointer;
+}
+
+.header .btnArea{
+    width: 33.3%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header button{
@@ -77,11 +89,21 @@ body {
 }
 
 .header button div{
-    width: 14px;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .header button div img{
     width: 100%;
+}
+
+.header button:hover div{
+    opacity: 1;
+    visibility: visible;
+    width: 14px;
 }
 
 .backBlue{

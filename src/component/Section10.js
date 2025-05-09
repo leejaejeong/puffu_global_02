@@ -6,11 +6,16 @@ import topArrow from '../images/section10_top_arr.png';
 import logoBlack from '../images/section10_logo_black.png';
 
 function Section10() {
+
+    const scrollToTop = () => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
     return (
         <div className='wrap'>
             <div className={style.secBox}>
                 <div className={style.topBtnArea}>
-                    <div className={style.topBtn}>
+                    <div className={style.topBtn} onClick={() => scrollToTop()}>
                         <img src={topArrow} />
                     </div>
                 </div>
@@ -20,7 +25,7 @@ function Section10() {
                             누구든 쉽게 시작하고,<br />
                             모두가 함께 성장하는 플랫폼
                         </p>
-                        <button>
+                        <button onClick={() => window.open('https://k-puffu.puffucorp.com/', '_blank')}>
                             K-PUFFU 입점 신청하러 가기
                         </button>
                     </div>

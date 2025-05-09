@@ -17,7 +17,7 @@ function Section04() {
                         한국 브랜드의 중국 시장 진출을 위한 플랫폼 ‘K-PUFFU’를<br />
                         구축하고 운영하고 있습니다.
                     </p>
-                    <button onClick={() => window.location.href = 'https://www.puffukorea.com/kr'}>
+                    <button onClick={() => window.open('https://www.puffukorea.com/kr/feeds', '_blank')}>
                         <p>K-PUFFU로 이동</p>
                         <div>
                             <img src={arrowImg} />

@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import './secCommon.css';
 import style from './Section02.module.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import secImg from '../images/section02_img.png';
 
+gsap.registerPlugin(ScrollTrigger); 
+
 function Section02() {
+
     return (
         <div className='wrap'>
             <div className='secBox'>

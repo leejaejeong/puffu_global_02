@@ -6,9 +6,14 @@ function Section01() {
     return (
         <div className={style.wrap}>
             <div className={style.hero}>
-                <div>
-                    <h1>중국 진출 파트너</h1>
-                    <h1 className={style.blueText}>PUFFU GLOBAL</h1>
+                <div className={style.heroTxt}>
+                    <div>
+                        <h1>중국 진출 파트너</h1>
+                    </div>
+                    <div>
+                        <h1 className={style.blueText}>PUFFU GLOBAL</h1>
+                    </div>
+
                     <p>
                         입점만 하면 중국 판매가 시작됩니다. <br />
                         고객응대, 마케팅까지 전 과정 지원.
@@ -19,7 +24,7 @@ function Section01() {
                 </div>
             </div>
 
-            <div>
+            <div className={style.scrollArea}>
                 <div className={style.scrollLine}>
                     <div className={style.lineOne}></div>
                     <div className={style.lineTwo}></div>

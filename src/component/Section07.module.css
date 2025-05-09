@@ -18,6 +18,7 @@
     box-sizing: border-box;
     font-family: 'Pretendard-Bold';
     font-size: clamp(14px, 1.15vw, 22px);
+    color: #0064FF;
 }
 
 .secBox03 .secTxt h3{
