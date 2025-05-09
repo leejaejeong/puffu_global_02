@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('../fonts/Pretendard-ExtraBold.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../fonts/Pretendard-SemiBold.woff2') format('woff2');
+    font-style: normal;
+}
+
+.topBtnArea{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px 60px 2% 60px;
+    box-sizing: border-box;
+}
+
+.topBtnArea .topBtn{
+    position: relative;
+    width: 50px;
+    height: 50px;
+
+    background-color: #FFF2F5;
+    border-radius: 50px;
+}
+
+.topBtnArea .topBtn img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 15px;
+}
+
+.bannerArea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 116px;
+    padding: 0 120px;
+    box-sizing: border-box;
+    background-color: #FFF2F5;
+}
+
+.bannerArea .bannerTxt p {
+    padding: 0 0 20px 0;
+    font-family: 'Pretendard-ExtraBold';
+    font-size: clamp(24px, 2.71vw, 52px);
+    line-height: 1.4;
+}
+
+.bannerArea .bannerTxt button {
+    padding: 14px 29px;
+    border-radius: 50px;
+    font-size: clamp(14px, 1.15vw, 22px);
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.bannerArea .bannerImg{
+    max-width: 812px;
+    margin: -2% 0 0 0;
+}
+
+.bannerArea .bannerImg img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 60px 120px;
+    box-sizing: border-box;
+}
+
+footer .footerLogo{
+    max-width: 170px;
+    padding: 0 0 20px 0;
+}
+
+footer .footerLogo img{
+    width: 100%;
+}
+
+footer .footerTxt p{
+    padding: 0 0 10px 0;
+    font-family: 'Pretendard-SemiBold';
+    font-size: clamp(14px, 0.83vw, 16px);
+}
+
+footer .footerTxt div span{
+    padding: 0 30px 0 0;
+    font-size: clamp(14px, 0.83vw, 16px);
+    color: #7B7B7B;
+}
+
+footer .footerTxt div span strong{
+    padding: 0 12px 0 0 ;
+    font-family: 'Pretendard-SemiBold'; 
+    color: #111111;
+}
+
+footer .copyright p{
+    padding: 0 30px 0 0;
+    font-size: clamp(14px, 0.83vw, 16px);
+    color: #7B7B7B;
+}

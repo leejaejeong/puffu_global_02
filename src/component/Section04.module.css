@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.woff2') format('woff2');
+    font-style: normal;
+}
+.secBox.secBox02 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 116px;
+    flex-direction: row-reverse;
+}
+
+.secTxt h3 {
+    padding: 0 0 20px 0;
+    font-family: 'Pretendard-Bold';
+    font-size: clamp(28px, 3.23vw, 62px);
+    line-height: 1.2;
+}
+
+.secTxt>p {
+    font-size: clamp(15px, 1.25vw, 24px);
+    line-height: 1.4;
+    padding: 0 0 30px 0;
+}
+
+.secTxt button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 30px;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #FF1B49;
+    transition: all 0.3s ease;
+}
+
+.secTxt button p {
+    font-family: 'Pretendard-Bold';
+    font-size: clamp(14px, 1.15vw, 22px);
+}
+
+.secTxt button div {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.secTxt button:hover div {
+    opacity: 1;
+    visibility: visible;
+    width: 20px;
+}
+
+.secTxt button div img {
+    width: 20px;
+}
+
+.secImg {
+    width: 100%;
+    max-width: 782px;
+}
+
+.secImg img {
+    width: 100%;
+    border-radius: 20px;
+}

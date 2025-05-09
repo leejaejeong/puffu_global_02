@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.woff2') format('woff2');
+    font-style: normal;
+}
+
+.secBox03{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.secBox03 .secTxt p{
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Bold';
+    font-size: clamp(14px, 1.15vw, 22px);
+}
+
+.secBox03 .secTxt h3{
+    padding: 0 0 50px 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Bold';
+    font-size: clamp(28px, 3.23vw, 62px);
+    line-height: 1.2;
+}
+
+.cardBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.cardBox .card{
+    width: 100%;
+    padding: 90px 0;
+    box-sizing: border-box;
+    border: solid 1px #D0D0D0;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.cardBox .cardIcon{
+    width: 100%;
+    padding: 0 0 29px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.cardBox .cardIcon img{
+    width: 100%;
+}
+
+.cardBox .cardTxt h4{
+    padding: 0 0 29px 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Bold';
+    font-size: clamp(19px, 2.19vw, 42px);
+    color: #0064FF;
+}
+
+.cardBox .cardTxt p{
+    font-size: clamp(14px, 1.15vw, 22px);
+    line-height: 1.4;
+}

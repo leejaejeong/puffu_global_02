@@ -1,0 +1,36 @@
+import React from "react";
+import style from './Section01.module.css';
+import heroImg from '../images/hero_handshake.png';
+
+function Section01() {
+    return (
+        <div className={style.wrap}>
+            <div className={style.hero}>
+                <div>
+                    <h1>중국 진출 파트너</h1>
+                    <h1 className={style.blueText}>PUFFU GLOBAL</h1>
+                    <p>
+                        입점만 하면 중국 판매가 시작됩니다. <br />
+                        고객응대, 마케팅까지 전 과정 지원.
+                    </p>
+                </div>
+                <div className={style.heroImg}>
+                    <img src={heroImg} />
+                </div>
+            </div>
+
+            <div>
+                <div className={style.scrollLine}>
+                    <div className={style.lineOne}></div>
+                    <div className={style.lineTwo}></div>
+                </div>
+                <div className={style.scrollText}>
+                    <p>SCROLL</p>
+                </div>
+
+            </div>
+        </div>
+    )
+}
+
+export default Section01;
