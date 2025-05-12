@@ -25,7 +25,7 @@
 }
 
 .secTxt>p {
-    font-size: clamp(15px, 1.25vw, 24px);
+    font-size: clamp(16px, 1.25vw, 24px);
     line-height: 1.4;
     padding: 0 0 30px 0;
     word-break: keep-all;

@@ -178,6 +178,7 @@ footer .copyright p {
     }
 
     footer {
-    padding: 30px 5vw;
-}
+        padding: 30px 5vw;
+        gap: 14px;
+    }
 }
