@@ -1,14 +1,37 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import './secCommon.css';
 import style from './Section09.module.css';
 import secImg02 from '../images/section09_img02.png';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Section09_m02() {
+
+    const itemRef = useRef();
+
+    useEffect(() => {
+
+        gsap.to(itemRef.current, {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: itemRef.current,
+                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
+                toggleActions: "play none none none",
+                // markers: true,
+            },
+        });
+    }, []);
+
     return (
         <div className='wrap'>
             <div className='secBox'>
                 <div className={style.itemBox}>
-                <div className={`${style.item}`}>
+                <div className={`${style.item}`} ref={itemRef}>
                     <div className={style.itemImg}>
                         <img src={secImg02} />
                     </div>

@@ -8,9 +8,8 @@ import logoBlack from '../images/section10_logo_black.png';
 function Section10() {
 
     const scrollToTop = () => {
-        document.querySelector(".wrap").scrollTo({ top: 0, behavior: "smooth" })
-        // window.scrollTo({ top: 0, behavior: 'smooth' });
-        console.log('scroll');
+        // document.querySelector(".wrap").scrollTo({ top: 0, behavior: "smooth" }) scroll snap일 경우 사용
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     return (
