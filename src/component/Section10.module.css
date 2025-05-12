@@ -118,7 +118,7 @@ footer .copyright p {
 
 @media(max-width:1240px) {
     .topBtnArea {
-        padding: 100px 5vw 2% 5vw;
+        padding: 20px 5vw 2% 5vw;
     }
 
     .bannerArea {
@@ -145,7 +145,14 @@ footer .copyright p {
 }
 
 @media(max-width:768px) {
+    .topBtnArea {
+        padding: 0;
+    }
+
     .topBtnArea .topBtn {
+        position: fixed;
+        bottom: 30px;
+        right: 5vw;
         width: 40px;
         height: 40px;
     }
@@ -178,7 +185,7 @@ footer .copyright p {
     }
 
     footer {
-        padding: 30px 5vw;
+        padding: 30px 5vw 20px 5vw;
         gap: 14px;
     }
 }

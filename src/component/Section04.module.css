@@ -111,7 +111,13 @@
 }
 
 @media(max-width:768px) {
+    .secImg {
+        height: 30vh;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
     .secTxt button {
-    padding: 12px 24px;
-}
+        padding: 12px 24px;
+    }
 }

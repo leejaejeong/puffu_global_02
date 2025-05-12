@@ -8,7 +8,9 @@ import logoBlack from '../images/section10_logo_black.png';
 function Section10() {
 
     const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.querySelector(".wrap").scrollTo({ top: 0, behavior: "smooth" })
+        // window.scrollTo({ top: 0, behavior: 'smooth' });
+        console.log('scroll');
     }
 
     return (
