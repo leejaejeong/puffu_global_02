@@ -8,7 +8,7 @@ import logoBlack from '../images/section10_logo_black.png';
 function Section10() {
 
     const scrollToTop = () => {
-        window.scrollTo({top: 0, behavior: 'smooth'});
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     return (
@@ -25,9 +25,11 @@ function Section10() {
                             누구든 쉽게 시작하고,<br />
                             모두가 함께 성장하는 플랫폼
                         </p>
-                        <button onClick={() => window.open('https://k-puffu.puffucorp.com/', '_blank')}>
-                            K-PUFFU 입점 신청하러 가기
-                        </button>
+                        <div>
+                            <button onClick={() => window.open('https://k-puffu.puffucorp.com/', '_blank')}>
+                                K-PUFFU 입점 신청하러 가기
+                            </button>
+                        </div>
                     </div>
                     <div className={style.bannerImg}>
                         <img src={bannerImg} />

@@ -10,7 +10,7 @@
     font-style: normal;
 }
 
-.topBtnArea{
+.topBtnArea {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -18,7 +18,7 @@
     box-sizing: border-box;
 }
 
-.topBtnArea .topBtn{
+.topBtnArea .topBtn {
     position: relative;
     width: 50px;
     height: 50px;
@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 
-.topBtnArea .topBtn img{
+.topBtnArea .topBtn img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,12 +37,12 @@
     max-width: 15px;
 }
 
-.bannerArea{
+.bannerArea {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 116px;
-    padding: 0 120px;
+    padding: 0 6.25vw;
     box-sizing: border-box;
     background-color: #FFF2F5;
 }
@@ -52,6 +52,7 @@
     font-family: 'Pretendard-ExtraBold';
     font-size: clamp(24px, 2.71vw, 52px);
     line-height: 1.4;
+    word-break: keep-all;
 }
 
 .bannerArea .bannerTxt button {
@@ -63,52 +64,120 @@
     color: #ffffff;
 }
 
-.bannerArea .bannerImg{
+.bannerArea .bannerImg {
     max-width: 812px;
     margin: -2% 0 0 0;
 }
 
-.bannerArea .bannerImg img{
+.bannerArea .bannerImg img {
     width: 100%;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 60px 120px;
+    padding: 60px 6.25vw;
     box-sizing: border-box;
 }
 
-footer .footerLogo{
+footer .footerLogo {
     max-width: 170px;
     padding: 0 0 20px 0;
 }
 
-footer .footerLogo img{
+footer .footerLogo img {
     width: 100%;
 }
 
-footer .footerTxt p{
+footer .footerTxt p {
     padding: 0 0 10px 0;
     font-family: 'Pretendard-SemiBold';
     font-size: clamp(14px, 0.83vw, 16px);
+    word-break: keep-all;
 }
 
-footer .footerTxt div span{
+footer .footerTxt div span {
     padding: 0 30px 0 0;
     font-size: clamp(14px, 0.83vw, 16px);
     color: #7B7B7B;
+    word-break: keep-all;
 }
 
-footer .footerTxt div span strong{
-    padding: 0 12px 0 0 ;
-    font-family: 'Pretendard-SemiBold'; 
+footer .footerTxt div span strong {
+    padding: 0 12px 0 0;
+    font-family: 'Pretendard-SemiBold';
     color: #111111;
 }
 
-footer .copyright p{
+footer .copyright p {
     padding: 0 30px 0 0;
     font-size: clamp(14px, 0.83vw, 16px);
     color: #7B7B7B;
+}
+
+@media(max-width:1240px) {
+    .topBtnArea {
+        padding: 100px 5vw 2% 5vw;
+    }
+
+    .bannerArea {
+        gap: 50px;
+        padding: 0 5vw;
+    }
+
+    .bannerArea .bannerImg {
+        max-width: 360px;
+        margin: -2% 0 0 0;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    footer .footerTxt div span {
+        display: block;
+        padding: 0 30px 10px 0;
+    }
+}
+
+@media(max-width:768px) {
+    .topBtnArea .topBtn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .topBtnArea .topBtn img {
+        max-width: 12px;
+    }
+
+    .bannerArea {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 30px 5vw;
+    }
+
+    .bannerArea .bannerTxt p {
+        padding: 0 0 10px 0;
+        text-align: center;
+    }
+
+    .bannerArea .bannerTxt div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bannerArea .bannerImg {
+        max-width: 230px;
+        margin: 0;
+    }
+
+    footer {
+    padding: 30px 5vw;
+}
 }

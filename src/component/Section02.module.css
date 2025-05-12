@@ -6,7 +6,7 @@
 
 .secTitle {
     font-family: 'Pretendard-Bold';
-    font-size: clamp(42px, 3.75vw, 72px);
+    font-size: clamp(38px, 3.75vw, 72px);
     line-height: 1.2;
 }
 
@@ -18,4 +18,10 @@
 .secImg img{
     width: 100%;
     border-radius: 20px;
+}
+
+@media(max-width:1240px) {
+}
+
+@media(max-width:768px) {
 }

@@ -13,6 +13,9 @@ import Section06 from './component/Section06.js';
 import Section07 from './component/Section07.js';
 import Section08 from './component/Section08.js';
 import Section09 from './component/Section09.js';
+import Section09_m01 from './component/Section09_m01.js';
+import Section09_m02 from './component/Section09_m02.js';
+import Section09_m03 from './component/Section09_m03.js';
 import Section10 from './component/Section10.js';
 
 function App() {
@@ -28,7 +31,10 @@ function App() {
         { component: <Section06 /> },
         { component: <Section07 /> },
         { component: <Section08 /> },
-        { component: <Section09 /> },
+        { component: <Section09 />, className: 'Sec09' },
+        { component: <Section09_m01 />, className: 'mSec09' },
+        { component: <Section09_m02 />, className: 'mSec09' },
+        { component: <Section09_m03 />, className: 'mSec09' },
         { component: <Section10 />, className: 'pdReset' }, // 패딩 0px
     ];
 

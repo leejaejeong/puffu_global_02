@@ -14,8 +14,8 @@ function Section04() {
                         전용 플랫폼 구축
                     </h3>
                     <p>
-                        한국 브랜드의 중국 시장 진출을 위한 플랫폼 ‘K-PUFFU’를<br />
-                        구축하고 운영하고 있습니다.
+                        한국 브랜드의 중국 시장 진출을 위한 플랫폼<br /> 
+                        ‘K-PUFFU’를 구축하고 운영하고 있습니다.
                     </p>
                     <button onClick={() => window.open('https://www.puffukorea.com/kr/feeds', '_blank')}>
                         <p>K-PUFFU로 이동</p>

@@ -4,7 +4,7 @@
     font-style: normal;
 }
 
-.secBox03{
+.secBox03 {
     position: absolute;
     top: 50%;
     left: 0;
@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.secBox03 .secTxt p{
+.secBox03 .secTxt p {
     padding: 0 0 20px 0;
     box-sizing: border-box;
     font-family: 'Pretendard-Bold';
@@ -21,7 +21,7 @@
     color: #0064FF;
 }
 
-.secBox03 .secTxt h3{
+.secBox03 .secTxt h3 {
     padding: 0 0 50px 0;
     box-sizing: border-box;
     font-family: 'Pretendard-Bold';
@@ -29,23 +29,23 @@
     line-height: 1.2;
 }
 
-.cardBox{
+.cardBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
 
-.cardBox .card{
+.cardBox .card {
     width: 100%;
-    padding: 90px 0;
+    padding: 90px 10px;
     box-sizing: border-box;
     border: solid 1px #D0D0D0;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
 
-.cardBox .cardIcon{
+.cardBox .cardIcon {
     width: 100%;
     padding: 0 0 29px 0;
     box-sizing: border-box;
@@ -53,11 +53,11 @@
     max-width: 200px;
 }
 
-.cardBox .cardIcon img{
+.cardBox .cardIcon img {
     width: 100%;
 }
 
-.cardBox .cardTxt h4{
+.cardBox .cardTxt h4 {
     padding: 0 0 29px 0;
     box-sizing: border-box;
     font-family: 'Pretendard-Bold';
@@ -65,7 +65,56 @@
     color: #0064FF;
 }
 
-.cardBox .cardTxt p{
+.cardBox .cardTxt p {
     font-size: clamp(14px, 1.15vw, 22px);
     line-height: 1.4;
+    word-break: keep-all;
+}
+
+@media(max-width:1240px) {
+    .cardBox {
+        gap: 15px;
+    }
+
+    .cardBox .cardIcon {
+        max-width: 150px;
+        padding: 0 0 20px 0;
+    }
+
+    .cardBox .cardTxt h4 {
+        padding: 0 0 20px 0;
+    }
+}
+
+@media(max-width:768px) {
+    .secBox03 .secTxt h3 {
+        padding: 0 0 30px 0;
+    }
+
+    .cardBox {
+        flex-direction: column;
+    }
+
+    .cardBox .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        flex-direction: row-reverse;
+        padding: 19px 24px;
+    }
+
+    .cardBox .cardIcon {
+        max-width: 75px;
+        padding: 0 0 00;
+    }
+
+    .cardBox .cardTxt h4 {
+        padding: 0 0 10px 0;
+        text-align: left;
+    }
+
+    .cardBox .cardTxt p {
+        text-align: left;
+    }
 }
