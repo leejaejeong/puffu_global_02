@@ -25,7 +25,7 @@ function App() {
     const sections = [
         { component: <Section01 /> },
         { component: <Section02 /> },
-        { component: <Section03 />, className: 'specialBg' }, 
+        { component: <Section03 />, className: 'specialBg' },
         { component: <Section04 /> },
         { component: <Section05 /> },
         { component: <Section06 /> },
@@ -35,7 +35,7 @@ function App() {
         { component: <Section09_m01 />, className: 'mSec09' },
         { component: <Section09_m02 />, className: 'mSec09' },
         { component: <Section09_m03 />, className: 'mSec09' },
-        { component: <Section10 />, className: 'pdReset' }, 
+        { component: <Section10 />, className: 'pdReset' },
     ];
 
     // 클릭 시 해당 ref 위치로 스크롤
@@ -67,13 +67,22 @@ function App() {
                     </button>
                 </div>
             </header>
-            {sections.map((sec, index) => (
+            <Layout>
+                <Section01 />
+            </Layout>
+            <Layout>
+                <Section02 />
+            </Layout>
+            <Layout>
+                <Section03  />
+            </Layout>
+            {/* {sections.map((sec, index) => (
                 <Layout key={sec.id} className={sec.className}>
                     <div ref={(el) => (sectionRefs.current[index] = el)}>
                         {sec.component}
                     </div>
                 </Layout>
-            ))}
+            ))} */}
 
         </div>
     );
