@@ -42,7 +42,7 @@
     box-sizing: border-box;
     border: solid 1px #D0D0D0;
     border-radius: 20px;
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
 
     opacity: 0;
     transform: translateY(20px);

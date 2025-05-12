@@ -25,9 +25,8 @@ function Section01() {
             </div>
 
             <div className={style.scrollArea}>
-                <div className={style.scrollLine}>
-                    <div className={style.lineOne}></div>
-                    <div className={style.lineTwo}></div>
+                <div className={style.scrollCircle}>
+                    <div className={style.circle}></div>
                 </div>
                 <div className={style.scrollText}>
                     <p>SCROLL</p>

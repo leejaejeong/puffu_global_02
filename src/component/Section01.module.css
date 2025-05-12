@@ -67,39 +67,28 @@
 .heroImg {
     max-width: 800px;
     width: 100%;
-    /* opacity: 0;
-    visibility: hidden;
-
-    animation: slideUp 0.7s ease-out forwards;
-    animation-delay: 1.2s; */
 }
 
 .heroImg img {
     width: 100%;
 }
 
-.scrollLine {
+.scrollCircle {
     position: relative;
     width: 100%;
-    height: 43px;
+    padding: 10px 0;
 }
 
-.scrollLine div {
+.circle {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
-    width: 2px;
-    height: 43px;
-}
-
-.lineOne {
-    background-color: #d8d8d8;
-}
-
-.lineTwo {
-    height: 0;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    animation: slideDown 2s ease-in-out infinite;
     background-color: #0064FF;
-    animation: growLine 2.5s ease-in-out infinite;
 }
 
 .scrollText {
@@ -111,13 +100,17 @@
     color: #0064FF;
 }
 
-@keyframes growLine {
+@keyframes slideDown {
     0% {
-        height: 100%;
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(100%);
     }
 
     100% {
-        height: 0;
+        transform: translateY(0%);
     }
 }
 
@@ -149,8 +142,9 @@
 
 @media(max-width:1240px) {
     .wrap {
-    padding: 20% 0 20% 0;
-}
+        padding: 20% 0 20% 0;
+    }
+
     .hero {
         align-items: flex-start;
         flex-direction: column;
@@ -160,9 +154,10 @@
 
 @media(max-width:768px) {
     .wrap {
-    padding: 40% 0 20% 0;
-}
-.hero {
-        padding: 0 0 30% 0;
+        padding: 40% 0 20% 0;
+    }
+
+    .hero {
+        padding: 0 0 15% 0;
     }
 }
