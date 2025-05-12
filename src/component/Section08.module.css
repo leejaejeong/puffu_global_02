@@ -7,13 +7,13 @@
 .secTitle p{
     padding: 0 0 20px 0;
     box-sizing: border-box;
-    font-family: 'Pretendard-Bold';
+    font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(14px, 1.15vw, 22px);
     color: #0064FF;
 }
 
 .secTitle h3 {
-    font-family: 'Pretendard-Bold';
+    font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(28px, 3.23vw, 62px);
     line-height: 1.2;
 }

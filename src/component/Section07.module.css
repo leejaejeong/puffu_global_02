@@ -16,7 +16,7 @@
 .secBox03 .secTxt p {
     padding: 0 0 20px 0;
     box-sizing: border-box;
-    font-family: 'Pretendard-Bold';
+    font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(14px, 1.15vw, 22px);
     color: #0064FF;
 }
@@ -24,7 +24,7 @@
 .secBox03 .secTxt h3 {
     padding: 0 0 50px 0;
     box-sizing: border-box;
-    font-family: 'Pretendard-Bold';
+    font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(28px, 3.23vw, 62px);
     line-height: 1.2;
 }
@@ -60,7 +60,7 @@
 .cardBox .cardTxt h4 {
     padding: 0 0 29px 0;
     box-sizing: border-box;
-    font-family: 'Pretendard-Bold';
+    font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(19px, 2.19vw, 42px);
     color: #0064FF;
 }

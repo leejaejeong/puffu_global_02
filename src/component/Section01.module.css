@@ -37,7 +37,7 @@
     /* height: 20%; */
     transform: translateY(100%);
     margin-bottom: 10px;
-    font-family: 'Pretendard-Black';
+    font-family: 'Pretendard-Black', sans-serif;
     font-size: clamp(43px, 4.69vw, 90px);
     font-weight: 900;
 
@@ -57,7 +57,7 @@
 }
 
 .hero p {
-    font-size: clamp(14px, 1.35vw, 26px);
+    font-size: clamp(16px, 1.35vw, 26px);
     line-height: 1.4;
     animation: slideUp 0.7s ease-out forwards;
     animation-delay: 0.6s;

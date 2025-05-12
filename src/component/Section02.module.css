@@ -5,7 +5,7 @@
 }
 
 .secTitle {
-    font-family: 'Pretendard-Bold';
+    font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(38px, 3.75vw, 72px);
     line-height: 1.2;
 }

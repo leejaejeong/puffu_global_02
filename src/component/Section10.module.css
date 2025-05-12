@@ -49,7 +49,7 @@
 
 .bannerArea .bannerTxt p {
     padding: 0 0 20px 0;
-    font-family: 'Pretendard-ExtraBold';
+    font-family: 'Pretendard-ExtraBold', sans-serif;
     font-size: clamp(24px, 2.71vw, 52px);
     line-height: 1.4;
     word-break: keep-all;
@@ -58,7 +58,7 @@
 .bannerArea .bannerTxt button {
     padding: 14px 29px;
     border-radius: 50px;
-    font-family: 'Pretendard-ExtraBold';
+    font-family: 'Pretendard-ExtraBold', sans-serif;
     font-size: clamp(14px, 1.15vw, 22px);
     background-color: #111111;
     color: #ffffff;
@@ -92,7 +92,7 @@ footer .footerLogo img {
 
 footer .footerTxt p {
     padding: 0 0 10px 0;
-    font-family: 'Pretendard-SemiBold';
+    font-family: 'Pretendard-SemiBold', sans-serif;
     font-size: clamp(14px, 0.83vw, 16px);
     word-break: keep-all;
 }
@@ -106,7 +106,7 @@ footer .footerTxt div span {
 
 footer .footerTxt div span strong {
     padding: 0 12px 0 0;
-    font-family: 'Pretendard-SemiBold';
+    font-family: 'Pretendard-SemiBold', sans-serif;
     color: #111111;
 }
 
