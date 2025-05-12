@@ -1,12 +1,41 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import style from './Section07.module.css';
 import './secCommon.css';
 import linkIcon from '../images/section07_link.png';
 import simpleIcon from '../images/section07_simple.png';
 import growthIcon from '../images/section07_growth.png';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 function Section07() {
+
+    const containerRef = useRef();
+    const cardRef01 = useRef();
+    const cardRef02 = useRef();
+    const cardRef03 = useRef();
+
+    useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top 80%",
+        toggleActions: "play none none none",
+        // markers: true,
+      },
+    });
+
+    tl.to([cardRef01.current, cardRef02.current, cardRef03.current], {
+      opacity: 1,
+      y: 0,
+      stagger: 0.2, // 카드 하나씩 순차적으로
+      duration: 1,
+      ease: "power1.out",
+    });
+  }, []);
+
     return (
         <div className='wrap'>
             <div className={`${style.secBox} ${style.secBox03}`}>
@@ -19,8 +48,8 @@ function Section07() {
                         함께 성장하는 푸푸글로벌
                     </h3>
                 </div>
-                <div className={style.cardBox}>
-                    <div className={`${style.card}`}>
+                <div className={style.cardBox} ref={containerRef}>
+                    <div className={`${style.card}`} ref={cardRef01}>
                         <div className={style.cardIcon}>
                             <img src={linkIcon} />
                         </div>
@@ -32,7 +61,7 @@ function Section07() {
                             </p>
                         </div>
                     </div>
-                    <div className={`${style.card}`}>
+                    <div className={`${style.card}`} ref={cardRef02}>
                         <div className={style.cardIcon}>
                             <img src={simpleIcon} />
                         </div>
@@ -44,7 +73,7 @@ function Section07() {
                             </p>
                         </div>
                     </div>
-                    <div className={`${style.card}`}>
+                    <div className={`${style.card}`} ref={cardRef03}>
                         <div className={style.cardIcon}>
                             <img src={growthIcon} />
                         </div>

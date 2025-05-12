@@ -19,9 +19,9 @@ body {
 
 .wrap{
     height: 100vh;
-    overflow-y: scroll;
+    /* overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; */
 }
 
 .layOut {
@@ -29,13 +29,13 @@ body {
     height: 100vh;
     padding: 0 6.25vw;
     box-sizing: border-box;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 .layOut>div {
     position: relative;
     height: 100%;
-     overflow: hidden;
+     /* overflow: hidden; */
 }
 
 .specialBg {

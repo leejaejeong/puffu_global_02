@@ -1,18 +1,40 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import './secCommon.css';
 import style from './Section02.module.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import secImg from '../images/section02_img.png';
 
-gsap.registerPlugin(ScrollTrigger); 
+gsap.registerPlugin(ScrollTrigger);
 
 function Section02() {
+
+    const titRef = useRef();
+
+    // useEffect(() => {
+    //     titRef.current.style.opacity = 0;
+    // }, []);
+
+    useEffect(() => {
+
+        gsap.to(titRef.current, {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: titRef.current,
+                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
+                toggleActions: "play none none none",
+                // markers: true,
+            },
+        });
+    }, []);
 
     return (
         <div className='wrap'>
             <div className='secBox'>
-                <div className={style.secTitle}>
+                <div className={style.secTitle} ref={titRef}>
                     <h2>
                         당신의 브랜드가<br />
                         중국 시장에<br />

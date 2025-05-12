@@ -1,13 +1,36 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import './secCommon.css';
 import style from './Section08.module.css';
 import secImg from '../images/section08_img.png';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Section08() {
+
+const titRef = useRef();
+
+    useEffect(() => {
+
+        gsap.to(titRef.current, {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: titRef.current,
+                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
+                toggleActions: "play none none none",
+                // markers: true,
+            },
+        });
+    }, []);
+
     return (
         <div className='wrap'>
             <div className='secBox'>
-                <div className={style.secTitle}>
+                <div className={style.secTitle} ref={titRef}>
                     <p>
                     우리만의 차별점
                     </p>

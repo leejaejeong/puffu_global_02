@@ -9,10 +9,13 @@
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+    width: 100%;
 }
 
 .item {
     width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 .item .itemImg {

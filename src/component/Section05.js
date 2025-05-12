@@ -1,13 +1,36 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import './secCommon.css';
 import style from './Section04.module.css';
 import sec05Img from '../images/section05_img.png';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Section05() {
+
+const txtRef = useRef();
+
+    useEffect(() => {
+
+        gsap.to(txtRef.current, {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: txtRef.current,
+                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
+                toggleActions: "play none none none",
+                // markers: true,
+            },
+        });
+    }, []);
+
     return (
         <div className='wrap'>
             <div className={`${style.secBox} ${style.secBox02}`}>
-                <div className={style.secTxt}>
+                <div className={style.secTxt} ref={txtRef}>
                     <h3>
                         판매부터<br />
                         물류·CS·마케팅까지
