@@ -74,25 +74,9 @@ function App() {
                     </div>
                 </Layout>
             ))}
-            {/* <Layout><Section01 /></Layout>
-            <Layout><Section02 /></Layout>
-            <Layout02><Section03 /> </Layout02>
-            <Layout><Section04 /></Layout>
-            <Layout><Section05 /></Layout>
-            <Layout><Section06 /></Layout>
-            <Layout><Section07 /></Layout> */}
 
         </div>
     );
 }
-
-// const Layout = ({ children }) => {
-
-//     return (
-//         <div className="layOut">
-//             {children}
-//         </div>
-//     )
-// }
 
 export default App;
