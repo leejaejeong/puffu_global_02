@@ -9,33 +9,39 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Section09_m01() {
 
-    const itemRef = useRef();
+    const txtRef = useRef();
 
     useEffect(() => {
-
-        gsap.to(itemRef.current, {
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: itemRef.current,
-                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
-                toggleActions: "play none none none",
-                // markers: true,
+        gsap.fromTo(
+            txtRef.current,
+            {
+                opacity: 0,
+                y: 50,
             },
-        });
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: txtRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                    // markers: true,
+                },
+            }
+        );
     }, []);
 
     return (
         <div className='wrap'>
             <div className='secBox'>
                 <div className={style.itemBox}>
-                    <div className={`${style.item}`} ref={itemRef}>
+                    <div className={`${style.item}`} >
                         <div className={style.itemImg}>
                             <img src={secImg01} />
                         </div>
-                        <div className={style.itemTxt}>
+                        <div className={style.itemTxt} ref={txtRef}>
                             <h4>
                                 입점만 하면<br />
                                 중국 판매가 시작됩니다

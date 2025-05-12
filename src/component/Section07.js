@@ -18,23 +18,30 @@ function Section07() {
     const cardRef03 = useRef();
 
     useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 80%",
-        toggleActions: "play none none none",
-        // markers: true,
-      },
-    });
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: containerRef.current,
+                start: "top 80%",
+                toggleActions: "play none none none",
+                // markers: true,
+            },
+        });
 
-    tl.to([cardRef01.current, cardRef02.current, cardRef03.current], {
-      opacity: 1,
-      y: 0,
-      stagger: 0.2, // 카드 하나씩 순차적으로
-      duration: 1,
-      ease: "power1.out",
-    });
-  }, []);
+        tl.fromTo(
+            [cardRef01.current, cardRef02.current, cardRef03.current],
+            {
+                opacity: 0,
+                y: 50,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                stagger: 0.2,
+                duration: 1,
+                ease: "power1.out",
+            }
+        );
+    }, []);
 
     return (
         <div className='wrap'>

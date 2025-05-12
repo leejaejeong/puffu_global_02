@@ -10,22 +10,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Section04() {
 
-const txtRef = useRef();
+    const txtRef = useRef();
 
     useEffect(() => {
-
-        gsap.to(txtRef.current, {
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: txtRef.current,
-                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
-                toggleActions: "play none none none",
-                // markers: true,
+        gsap.fromTo(
+            txtRef.current,
+            {
+                opacity: 0,
+                y: 50,
             },
-        });
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: txtRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                    // markers: true,
+                },
+            }
+        );
     }, []);
 
     return (
@@ -37,7 +43,7 @@ const txtRef = useRef();
                         전용 플랫폼 구축
                     </h3>
                     <p>
-                        한국 브랜드의 중국 시장 진출을 위한 플랫폼<br /> 
+                        한국 브랜드의 중국 시장 진출을 위한 플랫폼<br />
                         ‘K-PUFFU’를 구축하고 운영하고 있습니다.
                     </p>
                     <button onClick={() => window.open('https://www.puffukorea.com/kr/feeds', '_blank')}>

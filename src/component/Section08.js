@@ -9,22 +9,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Section08() {
 
-const titRef = useRef();
+    const titRef = useRef();
 
     useEffect(() => {
-
-        gsap.to(titRef.current, {
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: titRef.current,
-                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
-                toggleActions: "play none none none",
-                // markers: true,
+        gsap.fromTo(
+            titRef.current,
+            {
+                opacity: 0,
+                y: 50,
             },
-        });
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: titRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                    // markers: true,
+                },
+            }
+        );
     }, []);
 
     return (
@@ -32,11 +38,11 @@ const titRef = useRef();
             <div className='secBox'>
                 <div className={style.secTitle} ref={titRef}>
                     <p>
-                    우리만의 차별점
+                        우리만의 차별점
                     </p>
                     <h3>
-                    중국진출은 단순하게,<br/>
-                    파트너십은 깊이있게
+                        중국진출은 단순하게,<br />
+                        파트너십은 깊이있게
                     </h3>
                 </div>
                 <div className={style.secImg}>

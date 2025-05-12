@@ -17,23 +17,30 @@ function Section09() {
     const itemRef03 = useRef();
 
     useEffect(() => {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: containerRef.current,
-                start: "top 80%",
-                toggleActions: "play none none none",
-                // markers: true,
-            },
-        });
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top 80%",
+            toggleActions: "play none none none",
+            // markers: true,
+        },
+    });
 
-        tl.to([itemRef01.current, itemRef02.current, itemRef03.current], {
+    tl.fromTo(
+        [itemRef01.current, itemRef02.current, itemRef03.current],
+        {
+            opacity: 0,
+            y: 50,
+        },
+        {
             opacity: 1,
             y: 0,
             stagger: 0.2, // 카드 하나씩 순차적으로
             duration: 1,
             ease: "power1.out",
-        });
-    }, []);
+        }
+    );
+}, []);
 
     return (
         <div className='wrap'>

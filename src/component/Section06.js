@@ -9,22 +9,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Section06() {
 
-const txtRef = useRef();
+    const txtRef = useRef();
 
     useEffect(() => {
-
-        gsap.to(txtRef.current, {
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: txtRef.current,
-                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
-                toggleActions: "play none none none",
-                // markers: true,
+        gsap.fromTo(
+            txtRef.current,
+            {
+                opacity: 0,
+                y: 50,
             },
-        });
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: txtRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                    // markers: true,
+                },
+            }
+        );
     }, []);
 
     return (

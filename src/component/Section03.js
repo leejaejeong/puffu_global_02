@@ -12,35 +12,47 @@ function Section03() {
     const titRef = useRef();
 
     useEffect(() => {
-
-        gsap.to(pRef.current, {
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: pRef.current,
-                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
-                toggleActions: "play none none none",
-                // markers: true,
+        gsap.fromTo(
+            pRef.current,
+            {
+                opacity: 0,
+                y: 50,
             },
-        });
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: pRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                    // markers: true,
+                },
+            }
+        );
     }, []);
 
     useEffect(() => {
-
-        gsap.to(titRef.current, {
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: titRef.current,
-                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
-                toggleActions: "play none none none",
-                // markers: true,
+        gsap.fromTo(
+            titRef.current,
+            {
+                opacity: 0,
+                y: 50,
             },
-        });
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: titRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                    // markers: true,
+                },
+            }
+        );
     }, []);
 
     return (

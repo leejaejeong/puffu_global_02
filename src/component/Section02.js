@@ -16,20 +16,26 @@ function Section02() {
     // }, []);
 
     useEffect(() => {
-
-        gsap.to(titRef.current, {
+    gsap.fromTo(
+        titRef.current,
+        {
+            opacity: 0,
+            y: 50,
+        },
+        {
             opacity: 1,
             y: 0,
             duration: 1.5,
             ease: "power2.out",
             scrollTrigger: {
                 trigger: titRef.current,
-                start: "top 80%", // 뷰포트 80% 지점에 닿을 때 시작
+                start: "top 80%",
                 toggleActions: "play none none none",
                 // markers: true,
             },
-        });
-    }, []);
+        }
+    );
+}, []);
 
     return (
         <div className='wrap'>

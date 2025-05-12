@@ -17,11 +17,6 @@
     flex-direction: row-reverse;
 }
 
-.secTxt{
-    opacity: 0;
-    transform: translateY(50px);
-}
-
 .secTxt h3 {
     padding: 0 0 20px 0;
     font-family: 'Pretendard-Bold', sans-serif;
@@ -89,8 +84,8 @@
         flex-direction: column;
     }
 
-    .secImg {
-        height: 50vh;
+    /* .secImg {
+        height: 50%;
         overflow: hidden;
         border-radius: 20px;
     }
@@ -100,7 +95,7 @@
         object-fit: cover;
         object-position: center;
         display: block;
-    }
+    } */
 
     .secTxt h3 {
         padding: 0 0 10px 0;
@@ -116,11 +111,11 @@
 }
 
 @media(max-width:768px) {
-    .secImg {
-        height: 30vh;
+    /* .secImg {
+        height: 40%;
         overflow: hidden;
         border-radius: 20px;
-    }
+    } */
 
     .secTxt button {
         padding: 12px 24px;
