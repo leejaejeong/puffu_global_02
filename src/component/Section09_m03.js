@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import './secCommon.css';
 import style from './Section09.module.css';
 import secImg03 from '../images/section09_img03.png';
 import gsap from 'gsap';
