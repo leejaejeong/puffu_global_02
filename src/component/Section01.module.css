@@ -25,6 +25,10 @@
     height: 100%;
 }
 
+.heroTxt{
+    width: 50%;
+}
+
 .hero h1 {
     transform: translateY(30px);
     margin-bottom: 10px;
@@ -57,7 +61,7 @@
 
 .heroImg {
     max-width: 800px;
-    width: 100%;
+    width: 50%;
 }
 
 .heroImg img {
@@ -151,5 +155,13 @@
 @media(max-width:768px) {
     .hero {
         padding: 0 0 30px 0;
+    }
+
+    .heroTxt{
+        width: 100%;
+    }
+
+    .heroImg {
+        width: 100%;
     }
 }

@@ -67,7 +67,7 @@ function App() {
                     </button>
                 </div>
             </header>
-            {/* <Section01 />
+            <Section01 />
             <Section02 />
             <Section03 />
             <Section04 />
@@ -75,14 +75,15 @@ function App() {
             <Section06 />
             <Section07 />
             <Section08 />
-            <Section09 /> */}
-            {sections.map((sec, index) => (
+            <Section09 />
+            <Section10 />
+            {/* {sections.map((sec, index) => (
                 <div key={index} className={sec.className}>
                     <div ref={(el) => (sectionRefs.current[index] = el)}>
                         {sec.component}
                     </div>
                 </div>
-            ))}
+            ))} */}
 
         </div>
     );
