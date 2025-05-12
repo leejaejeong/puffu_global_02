@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import './secCommon.css';
 import style from './Section04.module.css';
 import sec06Img from '../images/section06_img.png';
 import gsap from 'gsap';
@@ -34,8 +33,8 @@ function Section06() {
     }, []);
 
     return (
-        <div className='wrap'>
-            <div className='secBox'>
+        <div className={style.container}>
+            <div className={style.secBox}>
                 <div className={style.secTxt} ref={txtRef}>
                     <h3>
                         맞춤형<br />

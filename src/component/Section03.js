@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import './secCommon.css';
 import style from './Section03.module.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -56,7 +55,7 @@ function Section03() {
     }, []);
 
     return (
-        <div className='wrap'>
+        <div className={style.container}>
             <div className={style.secBox02}>
                 <p ref={pRef}>우리가 제공하는 핵심 서비스</p>
                 <h3 ref={titRef}>

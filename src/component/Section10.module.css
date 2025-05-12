@@ -146,15 +146,16 @@ footer .copyright p {
 
 @media(max-width:768px) {
     .topBtnArea {
-        padding: 0;
+        padding: 20px 5vw;
     }
 
     .topBtnArea .topBtn {
-        position: fixed;
+        /* position: fixed;
         bottom: 30px;
-        right: 5vw;
+        right: 5vw; */
         width: 40px;
         height: 40px;
+        /* background-color: #f4f4f4; */
     }
 
     .topBtnArea .topBtn img {
@@ -185,7 +186,7 @@ footer .copyright p {
     }
 
     footer {
-        padding: 30px 5vw 20px 5vw;
+        padding: 60x 5vw;
         gap: 14px;
     }
 }

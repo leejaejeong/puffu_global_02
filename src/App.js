@@ -25,16 +25,16 @@ function App() {
     const sections = [
         { component: <Section01 /> },
         { component: <Section02 /> },
-        { component: <Section03 />, className: 'specialBg' },
+        { component: <Section03 />, className: 'specialBg pdReset' },
         { component: <Section04 /> },
         { component: <Section05 /> },
         { component: <Section06 /> },
         { component: <Section07 /> },
         { component: <Section08 /> },
         { component: <Section09 />, className: 'Sec09' },
-        { component: <Section09_m01 />, className: 'mSec09' },
-        { component: <Section09_m02 />, className: 'mSec09' },
-        { component: <Section09_m03 />, className: 'mSec09' },
+        // { component: <Section09_m01 />, className: 'mSec09' },
+        // { component: <Section09_m02 />, className: 'mSec09' },
+        // { component: <Section09_m03 />, className: 'mSec09' },
         { component: <Section10 />, className: 'pdReset' },
     ];
 
@@ -67,22 +67,22 @@ function App() {
                     </button>
                 </div>
             </header>
-            <Layout>
-                <Section01 />
-            </Layout>
-            <Layout>
-                <Section02 />
-            </Layout>
-            <Layout>
-                <Section03  />
-            </Layout>
-            {/* {sections.map((sec, index) => (
-                <Layout key={sec.id} className={sec.className}>
+            {/* <Section01 />
+            <Section02 />
+            <Section03 />
+            <Section04 />
+            <Section05 />
+            <Section06 />
+            <Section07 />
+            <Section08 />
+            <Section09 /> */}
+            {sections.map((sec, index) => (
+                <div key={index} className={sec.className}>
                     <div ref={(el) => (sectionRefs.current[index] = el)}>
                         {sec.component}
                     </div>
-                </Layout>
-            ))} */}
+                </div>
+            ))}
 
         </div>
     );

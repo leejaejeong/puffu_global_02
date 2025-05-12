@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import './secCommon.css';
 import style from './Section04.module.css';
 import arrowImg from '../images/section04_arr.png';
 import sec04Img from '../images/section04_img.png';
@@ -35,8 +34,8 @@ function Section04() {
     }, []);
 
     return (
-        <div className='wrap'>
-            <div className='secBox'>
+        <div className={style.container}>
+            <div className={style.secBox}>
                 <div className={style.secTxt} ref={txtRef}>
                     <h3>
                         중국 시장 진출을 위한<br />

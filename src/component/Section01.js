@@ -4,7 +4,7 @@ import heroImg from '../images/hero_handshake.png';
 
 function Section01() {
     return (
-        <div className={style.wrap}>
+        <div className={style.container}>
             <div className={style.hero}>
                 <div className={style.heroTxt}>
                     <div>

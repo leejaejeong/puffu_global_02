@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import './secCommon.css';
 import style from './Section09.module.css';
 import secImg01 from '../images/section09_img01.png';
 import secImg02 from '../images/section09_img02.png';
@@ -43,8 +42,8 @@ function Section09() {
 }, []);
 
     return (
-        <div className='wrap'>
-            <div className='secBox'>
+        <div className={style.container}>
+            <div className={style.secBox}>
                 <div className={style.itemBox} ref={containerRef}>
                     <div className={`${style.item}`} ref={itemRef01}>
                         <div className={style.itemImg}>

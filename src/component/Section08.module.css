@@ -4,6 +4,28 @@
     font-style: normal;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 6.25vw;
+}
+
+.secBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 116px;
+}
+
+.secTitle{
+    width: 50%;
+}
+
 .secTitle p{
     padding: 0 0 20px 0;
     box-sizing: border-box;
@@ -20,10 +42,26 @@
 
 .secImg {
     max-width: 690px;
-    width: 100%;
+    width: 50%;
 }
 
 .secImg img{
     width: 100%;
     border-radius: 20px;
+}
+
+@media(max-width:768px) {
+    .secBox {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .secTitle {
+        width: 100%;
+    }
+
+    .secImg {
+        width: 100%;
+    }
 }

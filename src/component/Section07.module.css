@@ -4,13 +4,17 @@
     font-style: normal;
 }
 
-.secBox03 {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+.container {
+    position: relative;
     width: 100%;
-    text-align: center;
+    box-sizing: border-box;
+    padding: 0 6.25vw;
+    margin: 300px 0;
+}
+
+.secBox {
+    width: 100%;
+    gap: 116px;
 }
 
 .secBox03 .secTxt p {
@@ -19,6 +23,7 @@
     font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(14px, 1.15vw, 22px);
     color: #0064FF;
+    text-align: center;
 }
 
 .secBox03 .secTxt h3 {
@@ -27,6 +32,7 @@
     font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(28px, 3.23vw, 62px);
     line-height: 1.2;
+    text-align: center;
 }
 
 .cardBox {
@@ -62,12 +68,14 @@
     font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(19px, 2.19vw, 42px);
     color: #0064FF;
+    text-align: center;
 }
 
 .cardBox .cardTxt p {
     font-size: clamp(16px, 1.15vw, 22px);
     line-height: 1.4;
     word-break: keep-all;
+    text-align: center;
 }
 
 @media(max-width:1240px) {
@@ -98,12 +106,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 5px;
+        gap: 16px;
         flex-direction: row-reverse;
-        padding: 26px 20px;
+        padding: 40px 30px;
+    }
+
+    .cardTxt{
+        width: 80%;
     }
 
     .cardBox .cardIcon {
+        width: 20%;
         max-width: 75px;
         padding: 0;
     }

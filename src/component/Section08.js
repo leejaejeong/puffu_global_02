@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import './secCommon.css';
 import style from './Section08.module.css';
 import secImg from '../images/section08_img.png';
 import gsap from 'gsap';
@@ -34,8 +33,8 @@ function Section08() {
     }, []);
 
     return (
-        <div className='wrap'>
-            <div className='secBox'>
+        <div className={style.container}>
+            <div className={style.secBox}>
                 <div className={style.secTitle} ref={titRef}>
                     <p>
                         우리만의 차별점

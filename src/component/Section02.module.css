@@ -4,7 +4,24 @@
     font-style: normal;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 200px 6.25vw;
+}
+
+.secBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 116px;
+    padding: 200px 0;
+}
+
 .secTitle {
+    width: 50%;
     font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(38px, 3.75vw, 72px);
     line-height: 1.2;
@@ -12,7 +29,7 @@
 
 .secImg {
     max-width: 690px;
-    width: 100%;
+    width: 50%;
 }
 
 .secImg img{
@@ -24,4 +41,17 @@
 }
 
 @media(max-width:768px) {
+    .secBox {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .secTitle {
+        width: 100%;
+    }
+
+    .secImg {
+        width: 100%;
+    }
 }

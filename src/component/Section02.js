@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import './secCommon.css';
 import style from './Section02.module.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -38,8 +37,8 @@ function Section02() {
 }, []);
 
     return (
-        <div className='wrap'>
-            <div className='secBox'>
+        <div className={style.container}>
+            <div className={style.secBox}>
                 <div className={style.secTitle} ref={titRef}>
                     <h2>
                         당신의 브랜드가<br />

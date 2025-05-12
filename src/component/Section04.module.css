@@ -4,17 +4,31 @@
     font-style: normal;
 }
 
-.secBox.secBox02 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
+.container {
+    position: relative;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 6.25vw;
+    margin: 200px 0;
+}
+
+.secBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 116px;
+}
+
+.secBox02{
     flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.secTxt{
+    width: 50%;
 }
 
 .secTxt h3 {
@@ -67,8 +81,8 @@
 }
 
 .secImg {
-    width: 100%;
-    max-width: 782px;
+    width: 50%;
+    /* max-width: 782px; */
 }
 
 .secImg img {
@@ -77,26 +91,6 @@
 }
 
 @media(max-width:1240px) {
-    .secBox.secBox02 {
-        align-items: flex-start;
-        justify-content: center;
-        gap: 40px;
-        flex-direction: column;
-    }
-
-    /* .secImg {
-        height: 50%;
-        overflow: hidden;
-        border-radius: 20px;
-    }
-
-    .secImg img {
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-    } */
-
     .secTxt h3 {
         padding: 0 0 10px 0;
     }
@@ -111,11 +105,24 @@
 }
 
 @media(max-width:768px) {
-    /* .secImg {
-        height: 40%;
-        overflow: hidden;
-        border-radius: 20px;
-    } */
+
+    .secBox {
+        gap: 60px;
+        flex-direction: column;
+    }
+    
+    .secBox02{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .secTxt{
+        width: 100%;
+    }
+
+    .secImg {
+        width: 100%;
+    }
 
     .secTxt button {
         padding: 12px 24px;

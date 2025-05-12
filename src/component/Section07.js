@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import style from './Section07.module.css';
-import './secCommon.css';
 import linkIcon from '../images/section07_link.png';
 import simpleIcon from '../images/section07_simple.png';
 import growthIcon from '../images/section07_growth.png';
@@ -44,7 +43,7 @@ function Section07() {
     }, []);
 
     return (
-        <div className='wrap'>
+        <div className={style.container}>
             <div className={`${style.secBox} ${style.secBox03}`}>
                 <div className={style.secTxt}>
                     <p>

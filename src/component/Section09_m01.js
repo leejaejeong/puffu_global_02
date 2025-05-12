@@ -34,8 +34,8 @@ function Section09_m01() {
     }, []);
 
     return (
-        <div className='wrap'>
-            <div className='secBox'>
+        <div className={style.container}>
+            <div className={style.secBox}>
                 <div className={style.itemBox}>
                     <div className={`${style.item}`} >
                         <div className={style.itemImg}>

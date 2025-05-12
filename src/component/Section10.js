@@ -1,5 +1,4 @@
 import React from "react";
-import './secCommon.css';
 import style from './Section10.module.css';
 import bannerImg from '../images/section10_img.png';
 import topArrow from '../images/section10_top_arr.png';
@@ -13,7 +12,7 @@ function Section10() {
     }
 
     return (
-        <div className='wrap'>
+        <div className={style.container}>
             <div className={style.secBox}>
                 <div className={style.topBtnArea}>
                     <div className={style.topBtn} onClick={() => scrollToTop()}>
