@@ -11,7 +11,14 @@ function Section01() {
             document.documentElement.style.setProperty('--vh', `${vh}px`);
         }
 
+        setvhSize();
+
         window.addEventListener('resize', setvhSize);
+
+        // cleanup 함수로 리스너 제거
+        return () => {
+            window.removeEventListener('resize', setvhSize);
+        };
 
     }, []);
 
