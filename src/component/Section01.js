@@ -16,12 +16,10 @@ function Section01() {
 
     //     window.addEventListener('resize', setvhSize);
     //     window.visualViewport?.addEventListener('resize', setvhSize);
-    //     window.addEventListener('scroll', setvhSize, { passive: true }); // scroll 이벤트 추가
 
     //     return () => {
     //         window.removeEventListener('resize', setvhSize);
     //         window.visualViewport?.removeEventListener('resize', setvhSize);
-    //         window.removeEventListener('scroll', setvhSize); // scroll 이벤트 정리
     //     };
     // }, []);
 
