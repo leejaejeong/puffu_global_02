@@ -4,29 +4,6 @@ import heroImg from '../images/hero_handshake.png';
 
 function Section01() {
 
-    useEffect(() => {
-    let rafId;
-
-    function setvhSize() {
-        cancelAnimationFrame(rafId);
-        rafId = requestAnimationFrame(() => {
-            const height = window.visualViewport?.height || window.innerHeight;
-            const vh = height * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
-    }
-
-    setvhSize();
-
-    window.addEventListener('resize', setvhSize);
-    window.visualViewport?.addEventListener('resize', setvhSize);
-
-    return () => {
-        window.removeEventListener('resize', setvhSize);
-        window.visualViewport?.removeEventListener('resize', setvhSize);
-        cancelAnimationFrame(rafId);
-    };
-}, []);
 
     // useEffect(() => {
     //     function setvhSize() {
@@ -48,11 +25,11 @@ function Section01() {
     //     };
     // }, []);
 
-//     useEffect(() => {
-//     const height = window.innerHeight;
-//     const vh = height * 0.01;
-//     document.documentElement.style.setProperty('--vh', `${vh}px`);
-// }, []);
+    useEffect(() => {
+    const height = window.innerHeight;
+    const vh = height * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}, []);
 
     return (
         <div className={style.container}>
