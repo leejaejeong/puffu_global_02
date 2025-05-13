@@ -56,32 +56,6 @@ function Section08() {
     //     document.documentElement.style.setProperty('--vh', `${vh}px`);
     // }, []);
 
-    useEffect(() => {
-        let frameId;
-
-        const setvhSize = () => {
-            if (frameId) cancelAnimationFrame(frameId);
-            frameId = requestAnimationFrame(() => {
-                const height = window.visualViewport?.height || window.innerHeight;
-                const vh = height * 0.01;
-                document.documentElement.style.setProperty('--vh', `${vh}px`);
-            });
-        };
-
-        setvhSize(); // 초기 실행
-
-        window.addEventListener('resize', setvhSize);
-        window.visualViewport?.addEventListener('resize', setvhSize);
-        window.addEventListener('scroll', setvhSize, { passive: true }); // 주소창 숨김 감지
-
-        return () => {
-            window.removeEventListener('resize', setvhSize);
-            window.visualViewport?.removeEventListener('resize', setvhSize);
-            window.removeEventListener('scroll', setvhSize);
-            cancelAnimationFrame(frameId);
-        };
-    }, []);
-
     return (
         <div className={style.container}>
             <div className={style.secBox}>
