@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from './Section01.module.css';
 import heroImg from '../images/hero_handshake.png';
 
 function Section01() {
+
+    useEffect(() => {
+
+        function setvhSize() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+
+        window.addEventListener('resize', setvhSize);
+
+    }, []);
+
     return (
         <div className={style.container}>
             <div className={style.hero}>
