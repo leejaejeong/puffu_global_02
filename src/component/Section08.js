@@ -56,23 +56,6 @@ function Section08() {
     //     document.documentElement.style.setProperty('--vh', `${vh}px`);
     // }, []);
 
-    useEffect(() => {
-    function setvhSize() {
-        const height = document.documentElement.clientHeight;
-        const vh = height * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-    }
-
-    setvhSize();
-
-    window.addEventListener('resize', setvhSize);
-    window.addEventListener('scroll', setvhSize); // 주소창 닫힘 대응 (선택 사항)
-
-    return () => {
-        window.removeEventListener('resize', setvhSize);
-        window.removeEventListener('scroll', setvhSize);
-    };
-}, []);
 
     return (
         <div className={style.container}>

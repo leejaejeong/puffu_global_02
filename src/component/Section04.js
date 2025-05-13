@@ -35,7 +35,7 @@ function Section04() {
 
     return (
         <div className={style.container}>
-            <div className={style.secBox}>
+            <div className={`${style.secBox} ${style.secBox01}`}>
                 <div className={style.secTxt} ref={txtRef}>
                     <h3>
                         중국 시장 진출을 위한<br />

@@ -70,6 +70,10 @@
 }
 
 @media(max-width:768px) {
+    .container {
+        padding: 0 6.25vw 150px 6.25vw;
+    }
+
     .itemBox {
         display: flex;
         justify-content: center;

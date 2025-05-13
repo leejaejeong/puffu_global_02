@@ -54,6 +54,12 @@ function Section03() {
         );
     }, []);
 
+    useEffect(() => {
+        const height = window.innerHeight;
+        const vh = height * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }, []);
+
     return (
         <div className={style.container}>
             <div className={style.secBox02}>

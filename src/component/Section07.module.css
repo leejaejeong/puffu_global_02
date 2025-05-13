@@ -8,8 +8,7 @@
     position: relative;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 6.25vw;
-    margin: 300px 0;
+    padding: 150px 6.25vw;
 }
 
 .secBox {
@@ -112,12 +111,12 @@
     }
 
     .cardTxt{
-        width: 80%;
+        width: 70%;
     }
 
     .cardBox .cardIcon {
-        width: 20%;
-        max-width: 75px;
+        width: 30%;
+        min-width: 75px;
         padding: 0;
     }
 
