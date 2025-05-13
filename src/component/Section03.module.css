@@ -35,6 +35,7 @@
     font-family: 'Pretendard-Bold', sans-serif;
     font-size: clamp(28px, 3.23vw, 62px);
     line-height: 1.2;
+    word-break: keep-all;
 }
 
 @media(max-width:1240px) {

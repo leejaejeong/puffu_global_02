@@ -6,6 +6,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.woff2') format('woff2');
+    font-style: normal;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -79,8 +85,11 @@
 
 .scrollCircle {
     position: relative;
-    width: 100%;
-    padding: 10px 0;
+    width: fit-content;
+    padding: 18px 12px;
+    margin: 0 auto;
+    /* border: 1px solid #0064FF; */
+    border-radius: 50px;
 }
 
 .circle {
@@ -88,10 +97,10 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     border-radius: 50px;
-    animation: slideDown 2s ease-in-out infinite;
+    animation: slideDown 1.8s ease-in-out infinite;
     background-color: #0064FF;
 }
 

@@ -102,30 +102,30 @@
     }
 
     .cardBox .card {
-        display: flex;
+        /* display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 16px;
-        flex-direction: row-reverse;
-        padding: 40px 30px;
+        gap: 14px;
+        flex-direction: row-reverse; */
+        padding: 20px 20px 30px 20px;
     }
 
     .cardTxt{
-        width: 70%;
+        width: 100%;
     }
 
     .cardBox .cardIcon {
-        width: 30%;
+        width: 40%;
         min-width: 75px;
         padding: 0;
     }
 
     .cardBox .cardTxt h4 {
         padding: 0 0 10px 0;
-        text-align: left;
+        /* text-align: left; */
     }
 
     .cardBox .cardTxt p {
-        text-align: left;
+        /* text-align: left; */
     }
 }
