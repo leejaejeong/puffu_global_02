@@ -63,6 +63,7 @@ body {
 .header .logoBox {
     width: 100%;
     max-width: 145px;
+    cursor: pointer;
 }
 
 .header .logoBox img {
@@ -179,6 +180,10 @@ body {
     .header .btnArea {
         width: 50%;
     }
+
+    .header button div {
+    display: none;
+}
 
     /* .Sec09 {
         display: none;

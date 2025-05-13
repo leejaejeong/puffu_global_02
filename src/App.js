@@ -2,7 +2,7 @@ import logo from './images/header_logo_blue.png';
 import applyIcon from './images/header_apply_store_ico.png';
 import "./reset.css";
 import './App.css';
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Layout from './component/Layout.jsx';
 import Section01 from './component/Section01.js';
 import Section02 from './component/Section02.js';
@@ -49,7 +49,7 @@ function App() {
 
             <header className="header">
                 <div className='logoArea'>
-                    <div className="logoBox">
+                    <div className="logoBox" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                         <img src={logo} alt='puffu global' />
                     </div>
                 </div>
