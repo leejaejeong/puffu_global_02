@@ -63,11 +63,12 @@
     .secBox {
         flex-direction: column;
         align-items: flex-start;
-        gap: 60px;
+        gap: 30px;
     }
 
     .secTitle {
         width: 100%;
+        text-align: center;
     }
 
     .secImg {
