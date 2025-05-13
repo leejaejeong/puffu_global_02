@@ -4,23 +4,29 @@ import heroImg from '../images/hero_handshake.png';
 
 function Section01() {
 
+    // useEffect(() => {
+    //     function setvhSize() {
+    //         const height = window.visualViewport?.height || window.innerHeight;
+    //         const vh = height * 0.01;
+    //         document.documentElement.style.setProperty('--vh', `${vh}px`);
+    //     }
+
+    //     setvhSize();
+
+    //     window.addEventListener('resize', setvhSize);
+    //     window.visualViewport?.addEventListener('resize', setvhSize);
+
+    //     return () => {
+    //         window.removeEventListener('resize', setvhSize);
+    //         window.visualViewport?.removeEventListener('resize', setvhSize);
+    //     };
+    // }, []);
+
     useEffect(() => {
-        function setvhSize() {
-            const height = window.visualViewport?.height || window.innerHeight;
-            const vh = height * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        }
-
-        setvhSize();
-
-        window.addEventListener('resize', setvhSize);
-        window.visualViewport?.addEventListener('resize', setvhSize);
-
-        return () => {
-            window.removeEventListener('resize', setvhSize);
-            window.visualViewport?.removeEventListener('resize', setvhSize);
-        };
-    }, []);
+    const height = window.innerHeight;
+    const vh = height * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}, []);
 
     return (
         <div className={style.container}>
