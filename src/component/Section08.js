@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { use, useEffect, useRef } from "react";
 import style from './Section08.module.css';
 import secImg from '../images/section08_img.png';
 import gsap from 'gsap';
@@ -30,6 +30,22 @@ function Section08() {
                 },
             }
         );
+    }, []);
+
+    useEffect(() => {
+       function setvhSize() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+
+        setvhSize();
+
+        window.addEventListener('resize', setvhSize);
+
+        // cleanup 함수로 리스너 제거
+        return () => {
+            window.removeEventListener('resize', setvhSize);
+        };
     }, []);
 
     return (
