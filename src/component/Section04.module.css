@@ -22,12 +22,12 @@
     gap: 116px;
 }
 
-.secBox02{
+.secBox02 {
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
 
-.secTxt{
+.secTxt {
     width: 50%;
 }
 
@@ -105,28 +105,31 @@
 }
 
 @media(max-width:768px) {
+    .container {
+        padding: 0 5vw;
+    }
 
     .secBox {
         gap: 30px;
         flex-direction: column;
     }
-    
-    .secBox02{
+
+    .secBox02 {
         flex-direction: column;
         justify-content: flex-end;
     }
-    
-    .secTxt{
+
+    .secTxt {
         width: 100%;
     }
 
     .secBox01 .secTxt>p {
-    padding: 0 0 10px 0 ;
-}
+        padding: 0 0 10px 0;
+    }
 
     .secTxt>p {
-    padding: 0;
-}
+        padding: 0;
+    }
 
     .secImg {
         width: 100%;

@@ -46,7 +46,7 @@
 
 @media(max-width:768px) {
     .container {
-        padding: 300px 6.25vw;
+        padding: 0 5vw;
     }
     .secBox {
         flex-direction: column;

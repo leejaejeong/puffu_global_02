@@ -100,6 +100,7 @@ footer .footerTxt p {
 footer .footerTxt div span {
     padding: 0 30px 0 0;
     font-size: clamp(14px, 0.83vw, 16px);
+    line-height: 1.2;
     color: #7B7B7B;
     word-break: keep-all;
 }
@@ -186,7 +187,7 @@ footer .copyright p {
     }
 
     footer {
-        padding: 60x 5vw;
+        padding: 30px 5vw;
         gap: 14px;
     }
 }
