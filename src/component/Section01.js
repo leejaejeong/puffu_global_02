@@ -4,23 +4,25 @@ import heroImg from '../images/hero_handshake.png';
 
 function Section01() {
 
-    // useEffect(() => {
-    //     function setvhSize() {
-    //         const height = window.visualViewport?.height || window.innerHeight;
-    //         const vh = height * 0.01;
-    //         document.documentElement.style.setProperty('--vh', `${vh}px`);
-    //     }
+    useEffect(() => {
+        function setvhSize() {
+            const height = window.visualViewport?.height || window.innerHeight;
+            const vh = height * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
 
-    //     setvhSize();
+        setvhSize();
 
-    //     window.addEventListener('resize', setvhSize);
-    //     window.visualViewport?.addEventListener('resize', setvhSize);
+        window.addEventListener('resize', setvhSize);
+        window.visualViewport?.addEventListener('resize', setvhSize);
+        window.addEventListener('scroll', setvhSize, { passive: true }); // scroll 이벤트 추가
 
-    //     return () => {
-    //         window.removeEventListener('resize', setvhSize);
-    //         window.visualViewport?.removeEventListener('resize', setvhSize);
-    //     };
-    // }, []);
+        return () => {
+            window.removeEventListener('resize', setvhSize);
+            window.visualViewport?.removeEventListener('resize', setvhSize);
+            window.removeEventListener('scroll', setvhSize); // scroll 이벤트 정리
+        };
+    }, []);
 
 //     useEffect(() => {
 //     const height = window.innerHeight;
