@@ -155,15 +155,17 @@
 }
 
 @media(max-width:1240px) {
+    
+}
+
+@media(max-width:768px) {
     .hero {
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
         gap: 50px;
     }
-}
-
-@media(max-width:768px) {
+    
     .container {
         padding: 54px 5vw 0 5vw;
     }
