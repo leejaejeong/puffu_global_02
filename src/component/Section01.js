@@ -5,24 +5,21 @@ import heroImg from '../images/hero_handshake.png';
 function Section01() {
 
     useEffect(() => {
-
         function setvhSize() {
-            // let vh = window.innerHeight * 0.01;
-            let vh = window.VisualViewport.height * 0.01;
+            const height = window.visualViewport?.height || window.innerHeight;
+            const vh = height * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
         }
 
         setvhSize();
 
         window.addEventListener('resize', setvhSize);
-        window.VisualViewport?.addEventListener('resize', setvhSize);
+        window.visualViewport?.addEventListener('resize', setvhSize);
 
-        // cleanup 함수로 리스너 제거
         return () => {
             window.removeEventListener('resize', setvhSize);
-            window.VisualViewport?.removeEventListener('resize', setvhSize);
+            window.visualViewport?.removeEventListener('resize', setvhSize);
         };
-
     }, []);
 
     return (
