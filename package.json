@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://leejaejeong.github.io/puffu_global_02/",
+  "homepage": ".",
   "eslintConfig": {
     "extends": [
       "react-app",
